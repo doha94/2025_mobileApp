@@ -2,11 +2,11 @@
 
 ## 1. 뷰그룹 생성
 
-### 뷰그룹은 여러 뷰를 포함하고 관리하는 레이아웃 요소입니다. Android에서는 LinearLayout, RelativeLayout, ConstraintLayout 등 다양한 뷰그룹을 사용할 수 있습니다.
-### 예를 들어, LinearLayout을 사용하여 세로로 배치된 뷰를 만드는 방법은 다음과 같습니다:
+뷰그룹은 여러 뷰를 포함하고 관리하는 레이아웃 요소입니다. Android에서는 `LinearLayout`, `RelativeLayout`, `ConstraintLayout` 등 다양한 뷰그룹을 사용할 수 있습니다.
 
+예를 들어, `LinearLayout`을 사용하여 세로로 배치된 뷰를 만드는 방법은 다음과 같습니다:
 
-
+```xml
 <!-- res/layout/activity_main.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
