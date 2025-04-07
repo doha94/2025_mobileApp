@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- 앱 타이틀 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dice Roller"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 주사위 이미지가 표시될 곳 -->
+    <ImageView
+        android:id="@+id/imageDice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dice_5"/>
+
+    <!-- 굴리기 버튼 -->
+    <Button
+        android:id="@+id/buttonRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL" />
+</LinearLayout>
