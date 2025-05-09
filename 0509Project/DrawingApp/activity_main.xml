@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 그림을 그릴 캔버스 영역 -->
+    <com.example.drawingapp.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <!-- 색상 선택 버튼들 -->
+    <LinearLayout
+        android:id="@+id/colorPalette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- 색상 버튼: 크기 고정, 테두리 및 여백 추가 -->
+        <Button android:id="@+id/btnBlack" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#000000" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnRed" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#FF0000" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnBlue" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#0000FF" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnGreen" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#00FF00" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnYellow" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#FFFF00" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnOrange" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#FFA500" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnGray" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#808080" android:background="@drawable/color_button_border"/>
+        <Button android:id="@+id/btnpurple" android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_margin="4dp" android:backgroundTint="#800080" android:background="@drawable/color_button_border"/>
+    </LinearLayout>
+
+    <!-- 지우기 및 브러시 굵기 조절 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 지우기 버튼 -->
+        <Button
+            android:id="@+id/eraseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지우기" />
+
+        <!-- 브러시 굵기 조절 SeekBar -->
+        <SeekBar
+            android:id="@+id/strokeSeekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
